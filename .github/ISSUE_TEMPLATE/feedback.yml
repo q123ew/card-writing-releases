@@ -1,0 +1,27 @@
+name: 试用反馈
+description: 报告问题或告诉我哪里不顺手
+title: "[试用反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: 请不要上传私人正文、API Key、账户信息。截图前请遮住这些内容。
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本和设备
+      placeholder: 例如 Windows 0.5.0 / Windows 11，或 Android 0.6.0 / 手机型号
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎么遇到的？
+      description: 写出操作步骤，以及是否每次都出现。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 希望怎样，实际怎样？
+    validations:
+      required: true
